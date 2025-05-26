@@ -1,0 +1,583 @@
+[
+  {
+    "id": "logan_gilbert",
+    "name": "Logan Gilbert",
+    "team": "Seattle Mariners",
+    "number": "No.36",
+    "img": "/img/logan_gilbert.jpg"
+  },
+  {
+    "id": "seth_lugo",
+    "name": "Seth Lugo",
+    "team": "Kansas City Royals",
+    "number": "No.67",
+    "img": "/img/seth_lugo.jpg"
+  },
+  {
+    "id": "logan_webb",
+    "name": "Logan Webb",
+    "team": "San Francisco Giants",
+    "number": "No.62",
+    "img": "/img/logan_webb.jpg"
+  },
+  {
+    "id": "zack_wheeler",
+    "name": "Zack Wheeler",
+    "team": "Philadelphia Phillies",
+    "number": "No.45",
+    "img": "/img/zack_wheeler.jpg"
+  },
+  {
+    "id": "aaron_nola",
+    "name": "Aaron Nola",
+    "team": "Philadelphia Phillies",
+    "number": "No.27",
+    "img": "/img/aaron_nola.jpg"
+  },
+  {
+    "id": "corbin_burnes",
+    "name": "Corbin Burnes",
+    "team": "Arizona Diamondbacks",
+    "number": "No.39",
+    "img": "/img/corbin_burnes.jpg"
+  },
+  {
+    "id": "tarik_skubal",
+    "name": "Tarik Skubal",
+    "team": "Detroit Tigers",
+    "number": "No.29",
+    "img": "/img/tarik_skubal.jpg"
+  },
+  {
+    "id": "george_kirby",
+    "name": "George Kirby",
+    "team": "Seattle Mariners",
+    "number": "No.68",
+    "img": "/img/george_kirby.jpg"
+  },
+  {
+    "id": "dylan_cease",
+    "name": "Dylan Cease",
+    "team": "San Diego Padres",
+    "number": "No.84",
+    "img": "/img/dylan_cease.jpg"
+  },
+  {
+    "id": "jake_irvin",
+    "name": "Jake Irvin",
+    "team": "Washington Nationals",
+    "number": "No.27",
+    "img": "/img/jake_irvin.jpg"
+  },
+  {
+    "id": "cole_ragans",
+    "name": "Cole Ragans",
+    "team": "Kansas City Royals",
+    "number": "No.55",
+    "img": "/img/cole_ragans.jpg"
+  },
+  {
+    "id": "kutter_crawford",
+    "name": "Kutter Crawford",
+    "team": "Boston Red Sox",
+    "number": "No.50",
+    "img": "/img/kutter_crawford.jpg"
+  },
+  {
+    "id": "luis_severino",
+    "name": "Luis Severino",
+    "team": "Athletics",
+    "number": "No.40",
+    "img": "/img/luis_severino.jpg"
+  },
+  {
+    "id": "sean_manaea",
+    "name": "Sean Manaea",
+    "team": "New York Mets",
+    "number": "No.59",
+    "img": "/img/sean_manaea.jpg"
+  },
+  {
+    "id": "brandon_pfaadt",
+    "name": "Brandon Pfaadt",
+    "team": "Arizona Diamondbacks",
+    "number": "No.32",
+    "img": "/img/brandon_pfaadt.jpg"
+  },
+  {
+    "id": "kevin_gausman",
+    "name": "Kevin Gausman",
+    "team": "Toronto Blue Jays",
+    "number": "No.34",
+    "img": "/img/kevin_gausman.jpg"
+  },
+  {
+    "id": "jp_sears",
+    "name": "JP Sears",
+    "team": "Athletics",
+    "number": "No.38",
+    "img": "/img/jp_sears.jpg"
+  },
+  {
+    "id": "bryce_miller",
+    "name": "Bryce Miller",
+    "team": "Seattle Mariners",
+    "number": "No.50",
+    "img": "/img/bryce_miller.jpg"
+  },
+  {
+    "id": "brady_singer",
+    "name": "Brady Singer",
+    "team": "Cincinnati Reds",
+    "number": "No.51",
+    "img": "/img/brady_singer.jpg"
+  },
+  {
+    "id": "tyler_anderson",
+    "name": "Tyler Anderson",
+    "team": "Los Angeles Angels",
+    "number": "No.31",
+    "img": "/img/tyler_anderson.jpg"
+  },
+  {
+    "id": "bailey_ober",
+    "name": "Bailey Ober",
+    "team": "Minnesota Twins",
+    "number": "No.17",
+    "img": "/img/bailey_ober.jpg"
+  },
+  {
+    "id": "tanner_houck",
+    "name": "Tanner Houck",
+    "team": "Boston Red Sox",
+    "number": "No.89",
+    "img": "/img/tanner_houck.jpg"
+  },
+  {
+    "id": "mitch_keller",
+    "name": "Mitch Keller",
+    "team": "Pittsburgh Pirates",
+    "number": "No.23",
+    "img": "/img/mitch_keller.jpg"
+  },
+  {
+    "id": "chris_sale",
+    "name": "Chris Sale",
+    "team": "Atlanta Braves",
+    "number": "No.51",
+    "img": "/img/chris_sale.jpg"
+  },
+  {
+    "id": "erick_fedde",
+    "name": "Erick Fedde",
+    "team": "St. Louis Cardinals",
+    "number": "No.12",
+    "img": "/img/erick_fedde.jpg"
+  },
+  {
+    "id": "framber_valdez",
+    "name": "Framber Valdez",
+    "team": "Houston Astros",
+    "number": "No.59",
+    "img": "/img/framber_valdez.jpg"
+  },
+  {
+    "id": "yusei_kikuchi",
+    "name": "Yusei Kikuchi",
+    "team": "Los Angeles Angels",
+    "number": "No.16",
+    "img": "/img/yusei_kikuchi.jpg"
+  },
+  {
+    "id": "luis_castillo",
+    "name": "Luis Castillo",
+    "team": "New York Mets",
+    "number": "No.1",
+    "img": "/img/luis_castillo.jpg"
+  },
+  {
+    "id": "patrick_corbin",
+    "name": "Patrick Corbin",
+    "team": "Texas Rangers",
+    "number": "No.46",
+    "img": "/img/patrick_corbin.jpg"
+  },
+  {
+    "id": "max_fried",
+    "name": "Max Fried",
+    "team": "New York Yankees",
+    "number": "No.54",
+    "img": "/img/max_fried.jpg"
+  },
+  {
+    "id": "freddy_peralta",
+    "name": "Freddy Peralta",
+    "team": "Milwaukee Brewers",
+    "number": "No.51",
+    "img": "/img/freddy_peralta.jpg"
+  },
+  {
+    "id": "tanner_bibee",
+    "name": "Tanner Bibee",
+    "team": "Cleveland Guardians",
+    "number": "No.28",
+    "img": "/img/tanner_bibee.jpg"
+  },
+  {
+    "id": "miles_mikolas",
+    "name": "Miles Mikolas",
+    "team": "St. Louis Cardinals",
+    "number": "No.39",
+    "img": "/img/miles_mikolas.jpg"
+  },
+  {
+    "id": "griffin_canning",
+    "name": "Griffin Canning",
+    "team": "New York Mets",
+    "number": "No.46",
+    "img": "/img/griffin_canning.jpg"
+  },
+  {
+    "id": "chris_bassitt",
+    "name": "Chris Bassitt",
+    "team": "Toronto Blue Jays",
+    "number": "No.40",
+    "img": "/img/chris_bassitt.jpg"
+  },
+  {
+    "id": "nathan_eovaldi",
+    "name": "Nathan Eovaldi",
+    "team": "Texas Rangers",
+    "number": "No.17",
+    "img": "/img/nathan_eovaldi.jpg"
+  },
+  {
+    "id": "jose_quintana",
+    "name": "Jose Quintana",
+    "team": "Milwaukee Brewers",
+    "number": "No.62",
+    "img": "/img/jose_quintana.jpg"
+  },
+  {
+    "id": "hunter_brown",
+    "name": "Hunter Brown",
+    "team": "Houston Astros",
+    "number": "No.58",
+    "img": "/img/hunter_brown.jpg"
+  },
+  {
+    "id": "kyle_gibson",
+    "name": "Kyle Gibson",
+    "team": "Baltimore Orioles",
+    "number": "No.48",
+    "img": "/img/kyle_gibson.jpg"
+  },
+  {
+    "id": "colin_rea",
+    "name": "Colin Rea",
+    "team": "Chicago Cubs",
+    "number": "No.53",
+    "img": "/img/colin_rea.jpg"
+  },
+  {
+    "id": "ronel_blanco",
+    "name": "Ronel Blanco",
+    "team": "Houston Astros",
+    "number": "No.56",
+    "img": "/img/ronel_blanco.jpg"
+  },
+  {
+    "id": "michael_wacha",
+    "name": "Michael Wacha",
+    "team": "Kansas City Royals",
+    "number": "No.52",
+    "img": "/img/michael_wacha.jpg"
+  },
+  {
+    "id": "sonny_gray",
+    "name": "Sonny Gray",
+    "team": "St. Louis Cardinals",
+    "number": "No.54",
+    "img": "/img/sonny_gray.jpg"
+  },
+  {
+    "id": "mackenzie_gore",
+    "name": "MacKenzie Gore",
+    "team": "Washington Nationals",
+    "number": "No.1",
+    "img": "/img/mackenzie_gore.jpg"
+  },
+  {
+    "id": "charlie_morton",
+    "name": "Charlie Morton",
+    "team": "Detroit Wolverines",
+    "number": "N/A",
+    "img": "/img/charlie_morton.jpg"
+  },
+  {
+    "id": "jameson_taillon",
+    "name": "Jameson Taillon",
+    "team": "Chicago Cubs",
+    "number": "No.50",
+    "img": "/img/jameson_taillon.jpg"
+  },
+  {
+    "id": "zach_eflin",
+    "name": "Zach Eflin",
+    "team": "Baltimore Orioles",
+    "number": "No.24",
+    "img": "/img/zach_eflin.jpg"
+  },
+  {
+    "id": "austin_gomber",
+    "name": "Austin Gomber",
+    "team": "Colorado Rockies",
+    "number": "No.26",
+    "img": "/img/austin_gomber.jpg"
+  },
+  {
+    "id": "ryan_feltner",
+    "name": "Ryan Feltner",
+    "team": "Colorado Rockies",
+    "number": "No.18",
+    "img": "/img/ryan_feltner.jpg"
+  },
+  {
+    "id": "brayan_bello",
+    "name": "Brayan Bello",
+    "team": "Boston Red Sox",
+    "number": "No.66",
+    "img": "/img/brayan_bello.jpg"
+  },
+  {
+    "id": "jack_flaherty",
+    "name": "Jack Flaherty",
+    "team": "Detroit Tigers",
+    "number": "No.9",
+    "img": "/img/jack_flaherty.jpg"
+  },
+  {
+    "id": "aaron_civale",
+    "name": "Aaron Civale",
+    "team": "Milwaukee Brewers",
+    "number": "No.32",
+    "img": "/img/aaron_civale.jpg"
+  },
+  {
+    "id": "andrew_heaney",
+    "name": "Andrew Heaney",
+    "team": "Pittsburgh Pirates",
+    "number": "No.45",
+    "img": "/img/andrew_heaney.jpg"
+  },
+  {
+    "id": "chris_flexen",
+    "name": "Chris Flexen",
+    "team": "Chicago Cubs",
+    "number": "No.77",
+    "img": "/img/chris_flexen.jpg"
+  },
+  {
+    "id": "zack_littell",
+    "name": "Zack Littell",
+    "team": "Tampa Bay Rays",
+    "number": "No.52",
+    "img": "/img/zack_littell.jpg"
+  },
+  {
+    "id": "marcus_stroman",
+    "name": "Marcus Stroman",
+    "team": "New York Yankees",
+    "number": "No.0",
+    "img": "/img/marcus_stroman.jpg"
+  },
+  {
+    "id": "luis_gil",
+    "name": "Luis Gil",
+    "team": "New York Yankees",
+    "number": "No.81",
+    "img": "/img/luis_gil.jpg"
+  },
+  {
+    "id": "mitch_spence",
+    "name": "Mitch Spence",
+    "team": "Athletics",
+    "number": "No.28",
+    "img": "/img/mitch_spence.jpg"
+  },
+  {
+    "id": "ben_lively",
+    "name": "Ben Lively",
+    "team": "Cleveland Guardians",
+    "number": "No.39",
+    "img": "/img/ben_lively.jpg"
+  },
+  {
+    "id": "mitchell_parker",
+    "name": "Mitchell Parker",
+    "team": "Washington Nationals",
+    "number": "No.70",
+    "img": "/img/mitchell_parker.jpg"
+  },
+  {
+    "id": "ryne_nelson",
+    "name": "Ryne Nelson",
+    "team": "Arizona Diamondbacks",
+    "number": "No.19",
+    "img": "/img/ryne_nelson.jpg"
+  },
+  {
+    "id": "frankie_montas",
+    "name": "Frankie Montas",
+    "team": "Brooklyn Cyclones",
+    "number": "No.47",
+    "img": "/img/frankie_montas.jpg"
+  },
+  {
+    "id": "hunter_greene",
+    "name": "Hunter Greene",
+    "team": "Cincinnati Reds",
+    "number": "No.21",
+    "img": "/img/hunter_greene.jpg"
+  },
+  {
+    "id": "cal_quantrill",
+    "name": "Cal Quantrill",
+    "team": "Miami Marlins",
+    "number": "No.47",
+    "img": "/img/cal_quantrill.jpg"
+  },
+  {
+    "id": "zac_gallen",
+    "name": "Zac Gallen",
+    "team": "Arizona Diamondbacks",
+    "number": "No.23",
+    "img": "/img/zac_gallen.jpg"
+  },
+  {
+    "id": "javier_assad",
+    "name": "Javier Assad",
+    "team": "Chicago Cubs",
+    "number": "No.72",
+    "img": "/img/javier_assad.jpg"
+  },
+  {
+    "id": "matt_waldron",
+    "name": "Matt Waldron",
+    "team": "San Antonio Missions",
+    "number": "No.4",
+    "img": "/img/matt_waldron.jpg"
+  },
+  {
+    "id": "garrett_crochet",
+    "name": "Garrett Crochet",
+    "team": "Boston Red Sox",
+    "number": "No.35",
+    "img": "/img/garrett_crochet.jpg"
+  },
+  {
+    "id": "nick_pivetta",
+    "name": "Nick Pivetta",
+    "team": "San Diego Padres",
+    "number": "No.27",
+    "img": "/img/nick_pivetta.jpg"
+  },
+  {
+    "id": "spencer_arrighetti",
+    "name": "Spencer Arrighetti",
+    "team": "Houston Astros",
+    "number": "No.41",
+    "img": "/img/spencer_arrighetti.jpg"
+  },
+  {
+    "id": "bailey_falter",
+    "name": "Bailey Falter",
+    "team": "Pittsburgh Pirates",
+    "number": "No.6",
+    "img": "/img/bailey_falter.jpg"
+  },
+  {
+    "id": "gavin_stone",
+    "name": "Gavin Stone",
+    "team": "Los Angeles Dodgers",
+    "number": "No.35",
+    "img": "/img/gavin_stone.jpg"
+  },
+  {
+    "id": "taj_bradley",
+    "name": "Taj Bradley",
+    "team": "Tampa Bay Rays",
+    "number": "No.45",
+    "img": "/img/taj_bradley.jpg"
+  },
+  {
+    "id": "andrew_abbott",
+    "name": "Andrew Abbott",
+    "team": "Cincinnati Reds",
+    "number": "No.41",
+    "img": "/img/andrew_abbott.jpg"
+  },
+  {
+    "id": "tobias_myers",
+    "name": "Tobias Myers",
+    "team": "Nashville Sounds",
+    "number": "No.40",
+    "img": "/img/tobias_myers.jpg"
+  },
+  {
+    "id": "joe_ryan",
+    "name": "Joe Ryan",
+    "team": "Minnesota Twins",
+    "number": "No.41",
+    "img": "/img/joe_ryan.jpg"
+  },
+  {
+    "id": "justin_steele",
+    "name": "Justin Steele",
+    "team": "Chicago Cubs",
+    "number": "No.35",
+    "img": "/img/justin_steele.jpg"
+  },
+  {
+    "id": "tyler_glasnow",
+    "name": "Tyler Glasnow",
+    "team": "Los Angeles Dodgers",
+    "number": "No.31",
+    "img": "/img/tyler_glasnow.jpg"
+  },
+  {
+    "id": "simeon_woods richardson",
+    "name": "Simeon Woods Richardson",
+    "team": "St. Paul Saints",
+    "number": "No.43",
+    "img": "/img/simeon_woods richardson.jpg"
+  },
+  {
+    "id": "paul_skenes",
+    "name": "Paul Skenes",
+    "team": "Pittsburgh Pirates",
+    "number": "No.30",
+    "img": "/img/paul_skenes.jpg"
+  },
+  {
+    "id": "kyle_hendricks",
+    "name": "Kyle Hendricks",
+    "team": "Los Angeles Angels",
+    "number": "No.28",
+    "img": "/img/kyle_hendricks.jpg"
+  },
+  {
+    "id": "michael_lorenzen",
+    "name": "Michael Lorenzen",
+    "team": "Kansas City Royals",
+    "number": "No.24",
+    "img": "/img/michael_lorenzen.jpg"
+  },
+  {
+    "id": "ryan_pepiot",
+    "name": "Ryan Pepiot",
+    "team": "Tampa Bay Rays",
+    "number": "No.44",
+    "img": "/img/ryan_pepiot.jpg"
+  }
+]
