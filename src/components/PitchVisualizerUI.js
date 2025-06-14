@@ -14,6 +14,8 @@ export default function PitchVisualizerUI() {
     inning: "All",
   });
   const [selectedPitch, setSelectedPitch] = useState(null);
+  const [showQuadrantView, setShowQuadrantView] = useState(false);
+  const [focusedZone, setFocusedZone] = useState(null); // null = all quadrants
 
   const [isMembersPopupOpen, setIsMembersPopupOpen] = useState(false);
   const [currentMode, setCurrentMode] = useState("dashboard");
@@ -72,7 +74,7 @@ export default function PitchVisualizerUI() {
   ]);
 
   useEffect(() => {
-    fetch("/data/players.json")
+    fetch(process.env.PUBLIC_URL + "/data/players.json")
       .then((res) => res.json())
       .then((playersData) => {
         setPlayers(playersData);
@@ -88,7 +90,7 @@ export default function PitchVisualizerUI() {
 
       setInfoFunc && setInfoFunc(selected);
 
-      fetch(`/data/${selected.id}_2024.csv`)
+      fetch(process.env.PUBLIC_URL + `/data/${selected.id}_2024.csv`)
         .then((res) => res.text())
         .then((csv) => {
           Papa.parse(csv, {
@@ -99,13 +101,14 @@ export default function PitchVisualizerUI() {
               const enriched = parsed.map((d) => ({
                 ...d,
                 category: categorize(d),
+                zone: getZoneQuadrant(d),
               }));
               setDataFunc(enriched);
             },
           });
         });
 
-      fetch(`/data/${selected.id}_2024_stats.csv`)
+      fetch(process.env.PUBLIC_URL + `/data/${selected.id}_2024_stats.csv`)
         .then((res) => res.text())
         .then((csv) => {
           Papa.parse(csv, {
@@ -375,6 +378,127 @@ export default function PitchVisualizerUI() {
       </div>
     );
   };
+  const QuadrantGrid = ({ data }) => {
+    const quadrants = ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7", "Q8", "Q9"];
+
+    // If a zone is selected, show zoomed-in version
+    if (focusedZone) {
+      return (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px",
+          }}
+        >
+          <div
+            style={{
+              position: "relative",
+              backgroundColor: "white",
+              border: "2px solid #e2e8f0",
+              borderRadius: "12px",
+              padding: "8px",
+              boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                top: "8px",
+                left: "8px",
+                fontWeight: "600",
+                fontSize: "12px",
+                backgroundColor: "#f1f5f9",
+                padding: "4px 8px",
+                borderRadius: "4px",
+                color: "#334155",
+                zIndex: 30,
+              }}
+            >
+              {focusedZone}
+            </div>
+
+            <button
+              onClick={() => setFocusedZone(null)}
+              style={{
+                position: "absolute",
+                top: "8px",
+                right: "8px",
+                fontSize: "12px",
+                padding: "4px 6px",
+                backgroundColor: "#ef4444",
+                color: "white",
+                border: "none",
+                borderRadius: "4px",
+                cursor: "pointer",
+                zIndex: 30,
+              }}
+            >
+              ✕
+            </button>
+
+            <ScatterPlot
+              data={data.filter((d) => d.zone === focusedZone)}
+              boxSize={300}
+            />
+            <StrikeZone boxSize={300} />
+          </div>
+        </div>
+      );
+    }
+
+    // Default grid view
+    return (
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "12px",
+          width: "720px",
+          margin: "0 auto",
+        }}
+      >
+        {quadrants.map((q) => (
+          <div
+            key={q}
+            onClick={() => setFocusedZone(q)}
+            style={{
+              position: "relative",
+              backgroundColor: "white",
+              border: "1px solid #e2e8f0",
+              borderRadius: "8px",
+              overflow: "hidden",
+              height: "220px",
+              boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+              cursor: "pointer",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                top: "8px",
+                left: "8px",
+                backgroundColor: "#f1f5f9",
+                padding: "2px 6px",
+                borderRadius: "4px",
+                fontSize: "10px",
+                fontWeight: "600",
+                color: "#475569",
+                zIndex: 30,
+              }}
+            >
+              {q}
+            </div>
+            <ScatterPlot
+              data={data.filter((d) => d.zone === q)}
+              boxSize={150}
+            />
+            <StrikeZone boxSize={150} />
+          </div>
+        ))}
+      </div>
+    );
+  };
 
   const PlayerInfoCard = ({ player, stats, side }) => (
     <div
@@ -399,7 +523,7 @@ export default function PitchVisualizerUI() {
         }}
       >
         <img
-          src={player.img}
+          src={process.env.PUBLIC_URL + player.img}
           alt={player.name}
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
@@ -537,6 +661,18 @@ export default function PitchVisualizerUI() {
     width: "100%",
     marginBottom: "24px",
   };
+  const getZoneQuadrant = (d) => {
+    const x = d.plate_x;
+    const z = d.plate_z;
+
+    if (x < ZONE_XMIN || x > ZONE_XMAX || z < ZONE_ZMIN || z > ZONE_ZMAX) {
+      return "Out";
+    }
+
+    const col = Math.floor((x - ZONE_XMIN) / ((ZONE_XMAX - ZONE_XMIN) / 3));
+    const row = Math.floor((ZONE_ZMAX - z) / ((ZONE_ZMAX - ZONE_ZMIN) / 3));
+    return `Q${row * 3 + col + 1}`; // Q1 to Q9
+  };
 
   return (
     <div
@@ -662,28 +798,43 @@ export default function PitchVisualizerUI() {
                 ))}
               </select>
             </div>
+            <button
+              onClick={() => setShowQuadrantView(!showQuadrantView)}
+              style={{
+                ...buttonStyle,
+                ...(showQuadrantView ? activeButtonStyle : {}),
+                fontSize: "14px",
+                padding: "8px 16px",
+              }}
+            >
+              {showQuadrantView ? "Single Zone View" : "Quadrant View"}
+            </button>
 
             {!multiViewEnabled ? (
-              <div
-                style={{
-                  position: "relative",
-                  width: VIEW_SIZE,
-                  height: VIEW_SIZE,
-                  margin: "0 auto",
-                  backgroundColor: "white",
-                  border: "2px solid #e2e8f0",
-                  borderRadius: "12px",
-                  overflow: "hidden",
-                  boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
-                }}
-              >
-                <StrikeZone boxSize={BOX_SIZE} />
-                <ScatterPlot
-                  data={filteredData}
-                  onPitchClick={setSelectedPitch}
-                  boxSize={BOX_SIZE}
-                />
-              </div>
+              showQuadrantView ? (
+                <QuadrantGrid data={filteredData} />
+              ) : (
+                <div
+                  style={{
+                    position: "relative",
+                    width: VIEW_SIZE,
+                    height: VIEW_SIZE,
+                    margin: "0 auto",
+                    backgroundColor: "white",
+                    border: "2px solid #e2e8f0",
+                    borderRadius: "12px",
+                    overflow: "hidden",
+                    boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+                  }}
+                >
+                  <StrikeZone boxSize={BOX_SIZE} />
+                  <ScatterPlot
+                    data={filteredData}
+                    onPitchClick={setSelectedPitch}
+                    boxSize={BOX_SIZE}
+                  />
+                </div>
+              )
             ) : (
               <div
                 style={{
@@ -797,7 +948,7 @@ export default function PitchVisualizerUI() {
                 }}
               >
                 <img
-                  src={playerInfo.img}
+                  src={process.env.PUBLIC_URL + playerInfo.img}
                   alt={playerInfo.name}
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
